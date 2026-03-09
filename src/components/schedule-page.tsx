@@ -787,7 +787,7 @@ function CreateRehearsalModal({
             </label>
             <DatePicker
               selected={form.startTime}
-              onChange={(date) => onChange("startTime", date as Date | null)}
+              onChange={(date: Date | null) => onChange("startTime", date)}
               showTimeSelect
               timeIntervals={15}
               dateFormat="yyyy-MM-dd HH:mm"
@@ -804,7 +804,7 @@ function CreateRehearsalModal({
             </label>
             <DatePicker
               selected={form.endTime}
-              onChange={(date) => onChange("endTime", date as Date | null)}
+              onChange={(date: Date | null) => onChange("endTime", date)}
               showTimeSelect
               timeIntervals={15}
               dateFormat="yyyy-MM-dd HH:mm"
